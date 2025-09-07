@@ -63,6 +63,14 @@ export default function Footer() {
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-cyan-600" />
                 <span className="text-gray-700">
+                  174 MB, Shabbir Shareef Road,
+                  <br />
+                  Phase 6, DHA, Lahore
+                </span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4 text-cyan-600" />
+                <span className="text-gray-700">
                   Sheikh Mohammed Bin Rashid Blvd
                   <br />
                   Boulevard Plaza, Tower 1 Level 9
