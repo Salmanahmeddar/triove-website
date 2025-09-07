@@ -27,9 +27,20 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xl px-3 py-1 rounded-lg shadow-sm">
-              TRIOVE
-            </div>
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="flex items-center gap-2"
+            >
+              <img
+                src="https://harmless-tapir-303.convex.cloud/api/storage/13a91384-00b4-4720-a82d-a6047d8dd498"
+                alt="TRIOVE Logo"
+                className="h-8 w-8 rounded-md shadow-sm"
+              />
+              <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold text-xl px-3 py-1 rounded-lg shadow-sm">
+                TRIOVE
+              </div>
+            </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -38,8 +49,8 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`cursor-pointer text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isActive(item.href) ? "text-blue-600" : "text-gray-700"
+                className={`cursor-pointer text-sm font-medium transition-colors hover:text-cyan-600 ${
+                  isActive(item.href) ? "text-cyan-600" : "text-gray-700"
                 }`}
               >
                 {item.name}
@@ -49,7 +60,7 @@ export default function Navbar() {
             {isAuthenticated && user?.role === "admin" && (
               <Link
                 to="/admin"
-                className="cursor-pointer text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="cursor-pointer text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors"
               >
                 Admin
               </Link>
@@ -99,8 +110,8 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`cursor-pointer text-sm font-medium transition-colors hover:text-blue-600 ${
-                    isActive(item.href) ? "text-blue-600" : "text-gray-700"
+                  className={`cursor-pointer text-sm font-medium transition-colors hover:text-cyan-600 ${
+                    isActive(item.href) ? "text-cyan-600" : "text-gray-700"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -111,7 +122,7 @@ export default function Navbar() {
               {isAuthenticated && user?.role === "admin" && (
                 <Link
                   to="/admin"
-                  className="cursor-pointer text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                  className="cursor-pointer text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Admin

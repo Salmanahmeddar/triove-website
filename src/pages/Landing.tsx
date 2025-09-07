@@ -69,14 +69,14 @@ export default function Landing() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-sky-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-100">
       <Navbar />
       
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32">
         <div className="absolute inset-0 -z-20 opacity-70">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_30%,rgba(59,130,246,0.15),transparent_60%)]" />
-          <div className="pointer-events-none absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,rgba(99,102,241,0.12),transparent_40%,rgba(14,165,233,0.12),transparent_70%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_30%,rgba(34,211,238,0.15),transparent_60%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,rgba(20,184,166,0.12),transparent_40%,rgba(34,211,238,0.12),transparent_70%)]" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
@@ -86,7 +86,7 @@ export default function Landing() {
             variants={staggerChildren}
           >
             <motion.div variants={fadeInUp} className="mb-8">
-              <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Sparkles className="h-4 w-4 mr-2" />
                 Your Trove of Technology Solutions
               </div>
@@ -97,7 +97,7 @@ export default function Landing() {
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
             >
               Technology.{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">
                 Reliability.
               </span>{" "}
               Innovation.
@@ -116,7 +116,7 @@ export default function Landing() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <Link to="/contact">
-                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3 text-lg">
+                <Button size="lg" className="bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700 text-white px-8 py-3 text-lg">
                   Get Started
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -132,8 +132,8 @@ export default function Landing() {
         
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-br from-blue-300 to-indigo-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse" />
-          <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-gradient-to-br from-indigo-300 to-sky-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse [animation-delay:400ms]" />
+          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-br from-cyan-300 to-teal-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse" />
+          <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-gradient-to-br from-teal-300 to-cyan-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse [animation-delay:400ms]" />
         </div>
       </section>
 
@@ -166,11 +166,11 @@ export default function Landing() {
               <motion.div key={value.letter} variants={fadeInUp}>
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
                   <CardHeader className="text-center pb-4">
-                    <div className="mx-auto w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mb-4">
+                    <div className="mx-auto w-16 h-16 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-full flex items-center justify-center mb-4">
                       <value.icon className="h-8 w-8 text-white" />
                     </div>
                     <CardTitle className="text-2xl">
-                      <span className="text-blue-600 font-bold text-3xl">{value.letter}</span> - {value.word}
+                      <span className="text-cyan-600 font-bold text-3xl">{value.letter}</span> - {value.word}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-center">
@@ -214,8 +214,8 @@ export default function Landing() {
               <motion.div key={service.title} variants={fadeInUp}>
                 <Card className="h-full hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:-translate-y-1">
                   <CardHeader className="text-center">
-                    <div className="mx-auto w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                      <service.icon className="h-6 w-6 text-blue-600" />
+                    <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
+                      <service.icon className="h-6 w-6 text-cyan-600" />
                     </div>
                     <CardTitle className="text-lg">{service.title}</CardTitle>
                   </CardHeader>
@@ -245,7 +245,7 @@ export default function Landing() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-teal-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial="initial"
@@ -261,13 +261,13 @@ export default function Landing() {
             </motion.h2>
             <motion.p 
               variants={fadeInUp}
-              className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto"
+              className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto"
             >
               Let's discuss how TRIOVE can help you unlock technology, deliver value, and achieve excellence in your digital transformation journey.
             </motion.p>
             <motion.div variants={fadeInUp}>
               <Link to="/contact">
-                <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg">
+                <Button size="lg" variant="secondary" className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 text-lg">
                   Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
