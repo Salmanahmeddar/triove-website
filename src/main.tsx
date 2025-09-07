@@ -16,6 +16,8 @@ import Contact from "./pages/Contact.tsx";
 import Insights from "./pages/Insights.tsx";
 import "./types/global.d.ts";
 import Industries from "./pages/Industries.tsx";
+import ServiceDetail from "./pages/ServiceDetail.tsx";
+import IndustryDetail from "./pages/IndustryDetail.tsx";
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
 
@@ -62,9 +64,11 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/industries" element={<Industries />} />
+            <Route path="/industries/:slug" element={<IndustryDetail />} />
             <Route path="/auth" element={<AuthPage redirectAfterAuth="/admin" />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

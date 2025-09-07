@@ -17,6 +17,9 @@ export default function Industries() {
     animate: { transition: { staggerChildren: 0.1 } }
   };
 
+  const toSlug = (s: string) =>
+    s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
   const industries = [
     {
       name: "Financial Services",
@@ -111,7 +114,13 @@ export default function Industries() {
                         <li key={h} className="text-sm">{h}</li>
                       ))}
                     </ul>
-                    <div className="mt-6">
+                    <div className="mt-6 flex gap-3">
+                      <Link to={`/industries/${toSlug(ind.name)}`}>
+                        <Button variant="outline" size="sm" className="cursor-pointer">
+                          Learn more
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </Link>
                       <Link to="/contact">
                         <Button variant="outline" size="sm">
                           Talk to an expert

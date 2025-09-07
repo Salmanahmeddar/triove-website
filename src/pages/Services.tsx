@@ -125,6 +125,10 @@ export default function Services() {
     }
   ];
 
+  // Add slug helper for detail links
+  const toSlug = (s: string) =>
+    s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -190,6 +194,15 @@ export default function Services() {
                         </li>
                       ))}
                     </ul>
+                    {/* Add Learn more link */}
+                    <div className="mt-6">
+                      <Link to={`/services/${toSlug(service.title)}`}>
+                        <Button variant="outline" size="sm" className="cursor-pointer">
+                          Learn more
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </Link>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
