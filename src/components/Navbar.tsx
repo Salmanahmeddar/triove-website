@@ -38,7 +38,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                className={`cursor-pointer text-sm font-medium transition-colors hover:text-blue-600 ${
                   isActive(item.href) ? "text-blue-600" : "text-gray-700"
                 }`}
               >
@@ -49,7 +49,7 @@ export default function Navbar() {
             {isAuthenticated && user?.role === "admin" && (
               <Link
                 to="/admin"
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="cursor-pointer text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
               >
                 Admin
               </Link>
@@ -99,7 +99,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  className={`cursor-pointer text-sm font-medium transition-colors hover:text-blue-600 ${
                     isActive(item.href) ? "text-blue-600" : "text-gray-700"
                   }`}
                   onClick={() => setIsOpen(false)}
@@ -111,7 +111,7 @@ export default function Navbar() {
               {isAuthenticated && user?.role === "admin" && (
                 <Link
                   to="/admin"
-                  className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                  className="cursor-pointer text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Admin

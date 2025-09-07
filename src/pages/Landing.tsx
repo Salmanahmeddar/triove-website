@@ -69,11 +69,15 @@ export default function Landing() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-sky-50 to-indigo-100">
       <Navbar />
       
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32">
+        <div className="absolute inset-0 -z-20 opacity-70">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_30%,rgba(59,130,246,0.15),transparent_60%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,rgba(99,102,241,0.12),transparent_40%,rgba(14,165,233,0.12),transparent_70%)]" />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center"
@@ -128,8 +132,8 @@ export default function Landing() {
         
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-br from-blue-300 to-indigo-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse" />
+          <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-gradient-to-br from-indigo-300 to-sky-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse [animation-delay:400ms]" />
         </div>
       </section>
 
