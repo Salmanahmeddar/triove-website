@@ -164,7 +164,7 @@ export default function Landing() {
           >
             {values.map((value, index) => (
               <motion.div key={value.letter} variants={fadeInUp}>
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md backdrop-blur-md bg-white/70">
                   <CardHeader className="text-center pb-4">
                     <div className="mx-auto w-16 h-16 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-full flex items-center justify-center mb-4">
                       <value.icon className="h-8 w-8 text-white" />
@@ -212,7 +212,7 @@ export default function Landing() {
           >
             {services.map((service, index) => (
               <motion.div key={service.title} variants={fadeInUp}>
-                <Card className="h-full hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:-translate-y-1">
+                <Card className="h-full hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:-translate-y-1 backdrop-blur-md bg-white/70">
                   <CardHeader className="text-center">
                     <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
                       <service.icon className="h-6 w-6 text-cyan-600" />
