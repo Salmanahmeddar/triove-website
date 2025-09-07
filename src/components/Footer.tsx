@@ -58,7 +58,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-cyan-600" />
-                <span className="text-gray-700">New York, NY</span>
+                <span className="text-gray-700">
+                  Sheikh Mohammed Bin Rashid Blvd
+                  <br />
+                  Boulevard Plaza, Tower 1 Level 9
+                  <br />
+                  Dubai, UAE
+                </span>
               </li>
             </ul>
           </div>
