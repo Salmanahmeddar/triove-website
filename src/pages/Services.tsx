@@ -130,7 +130,7 @@ export default function Services() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center max-w-4xl mx-auto"
@@ -143,7 +143,7 @@ export default function Services() {
               className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight"
             >
               Our{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">
                 Services
               </span>
             </motion.h1>
@@ -173,7 +173,7 @@ export default function Services() {
               <motion.div key={service.title} variants={fadeInUp}>
                 <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2">
                   <CardHeader>
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-xl flex items-center justify-center mb-4">
                       <service.icon className="h-8 w-8 text-white" />
                     </div>
                     <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
@@ -246,7 +246,7 @@ export default function Services() {
               }
             ].map((process, index) => (
               <motion.div key={process.step} variants={fadeInUp} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-lg">{process.step}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{process.title}</h3>
@@ -258,7 +258,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-teal-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial="initial"
@@ -274,7 +274,7 @@ export default function Services() {
             </motion.h2>
             <motion.p 
               variants={fadeInUp}
-              className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto"
+              className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto"
             >
               Let's discuss your project requirements and how TRIOVE can help you achieve your technology goals.
             </motion.p>

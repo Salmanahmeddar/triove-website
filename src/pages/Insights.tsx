@@ -19,13 +19,13 @@ export default function Insights() {
   const stagger = { animate: { transition: { staggerChildren: 0.08 } } };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-100">
       <Navbar />
 
       <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial="initial" animate="animate" variants={stagger} className="text-center max-w-3xl mx-auto">
-            <motion.div variants={fadeInUp} className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <motion.div variants={fadeInUp} className="inline-flex items-center bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
               <BookOpenText className="h-4 w-4 mr-2" />
               Insights & Blog
             </motion.div>
@@ -62,7 +62,7 @@ export default function Insights() {
                         {p.tags?.length > 0 && (
                           <div className="mt-4 flex flex-wrap gap-2">
                             {p.tags.map((t, i) => (
-                              <span key={i} className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded-full">
+                              <span key={i} className="text-xs bg-cyan-50 text-cyan-700 px-2 py-1 rounded-full">
                                 #{t}
                               </span>
                             ))}

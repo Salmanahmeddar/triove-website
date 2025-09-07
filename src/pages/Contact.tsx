@@ -40,7 +40,7 @@ export default function Contact() {
         subject: form.subject.trim(),
         message: form.message.trim(),
       });
-      toast("Thanks! We’ll be in touch shortly.");
+      toast("Thanks! We'll be in touch shortly.");
       setForm({ name: "", email: "", company: "", phone: "", subject: "", message: "" });
     } catch (err) {
       console.error(err);
@@ -61,17 +61,17 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-100">
       <Navbar />
       <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial="initial" animate="animate" variants={stagger} className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <motion.div variants={fadeInUp} className="space-y-6">
-              <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">
                 Get in touch
               </div>
               <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
-                Let’s build something great together
+                Let's build something great together
               </h1>
               <p className="text-lg text-gray-600">
                 Share a few details about your goals. Our team will reach out to align on scope, timeline, and next steps.
@@ -81,8 +81,8 @@ export default function Contact() {
                 <Card className="border-0 shadow-md backdrop-blur-md bg-white/70">
                   <CardContent className="p-5">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
-                        <Mail className="h-5 w-5 text-blue-700" />
+                      <div className="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center">
+                        <Mail className="h-5 w-5 text-cyan-700" />
                       </div>
                       <div>
                         <div className="text-sm text-gray-500">Email</div>
@@ -94,8 +94,8 @@ export default function Contact() {
                 <Card className="border-0 shadow-md backdrop-blur-md bg-white/70">
                   <CardContent className="p-5">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
-                        <Phone className="h-5 w-5 text-blue-700" />
+                      <div className="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center">
+                        <Phone className="h-5 w-5 text-cyan-700" />
                       </div>
                       <div>
                         <div className="text-sm text-gray-500">Phone</div>

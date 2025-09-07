@@ -69,14 +69,14 @@ export default function Industries() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-100">
       <Navbar />
 
       {/* Hero */}
       <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial="initial" animate="animate" variants={stagger} className="text-center max-w-4xl mx-auto">
-            <motion.div variants={fadeInUp} className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <motion.div variants={fadeInUp} className="inline-flex items-center bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
               Industry Expertise
             </motion.div>
             <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-4">
@@ -99,8 +99,8 @@ export default function Industries() {
               <motion.div key={ind.name} variants={fadeInUp}>
                 <Card className="h-full border-0 shadow-md hover:-translate-y-1 transition-all duration-300 backdrop-blur-md bg-white/70">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center mb-3">
-                      <ind.icon className="h-6 w-6 text-blue-700" />
+                    <div className="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center mb-3">
+                      <ind.icon className="h-6 w-6 text-cyan-700" />
                     </div>
                     <CardTitle className="text-xl">{ind.name}</CardTitle>
                     <CardDescription className="text-base">{ind.description}</CardDescription>

@@ -33,7 +33,7 @@ export default function About() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center max-w-4xl mx-auto"
@@ -46,7 +46,7 @@ export default function About() {
               className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight"
             >
               About{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">
                 TRIOVE
               </span>
             </motion.h1>
@@ -103,14 +103,14 @@ export default function About() {
               variants={fadeInUp}
               className="relative"
             >
-              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl p-8 text-white">
+              <div className="bg-gradient-to-br from-cyan-600 to-teal-600 rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                <p className="text-lg text-blue-100 mb-6">
+                <p className="text-lg text-cyan-100 mb-6">
                   To unlock the full potential of technology for businesses worldwide, 
                   delivering innovative solutions with unwavering reliability and excellence.
                 </p>
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                <p className="text-lg text-blue-100">
+                <p className="text-lg text-cyan-100">
                   To be the global leader in technology consulting and digital transformation, 
                   recognized for our commitment to optimal value delivery and client success.
                 </p>
@@ -187,7 +187,7 @@ export default function About() {
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <div className="flex items-center space-x-3 mb-2">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-lg flex items-center justify-center">
                         <span className="text-white font-bold text-xl">{value.letter}</span>
                       </div>
                       <CardTitle className="text-xl">{value.title}</CardTitle>
@@ -221,7 +221,7 @@ export default function About() {
                 variants={fadeInUp}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-cyan-600 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">
@@ -234,7 +234,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-teal-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial="initial"
@@ -250,7 +250,7 @@ export default function About() {
             </motion.h2>
             <motion.p 
               variants={fadeInUp}
-              className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto"
+              className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto"
             >
               Let's discuss how our values-driven approach can transform your business and deliver exceptional results.
             </motion.p>
