@@ -22,18 +22,18 @@ export default function Navbar() {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+    <nav className="sticky top-0 z-50 bg-white/60 backdrop-blur-xl border-b border-white/40 shadow-[0_2px_24px_rgba(0,0,0,0.06)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xl px-3 py-1 rounded-lg">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xl px-3 py-1 rounded-lg shadow-sm">
               TRIOVE
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -92,7 +92,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-gray-200 py-4"
+            className="md:hidden border-t border-white/40 py-4 bg-white/70 backdrop-blur-xl"
           >
             <div className="flex flex-col space-y-4">
               {navigation.map((item) => (
@@ -118,7 +118,7 @@ export default function Navbar() {
                 </Link>
               )}
               
-              <div className="pt-4 border-t border-gray-200">
+              <div className="pt-4 border-t border-white/40">
                 {isAuthenticated ? (
                   <div className="space-y-2">
                     <p className="text-sm text-gray-700">
